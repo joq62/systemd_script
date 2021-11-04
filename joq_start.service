@@ -1,0 +1,11 @@
+[Unit]
+Description= start system
+After=multi-user.target
+Type=idle
+
+[Service]
+Type=forking
+ExecStart=/home/joq62/joq_start.sh
+
+[Install]
+WantedBy=multi-user.target
